@@ -17,13 +17,13 @@
                         <a class="navbar-brand" href="#">Portfolio</a>
                       </div>
                       <ul class="nav navbar-nav">
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Experience</a></li>
+                        <li><a href="#proj">Projects</a></li>
+                        <li><a href="#exp">Experience</a></li>
                       </ul>
                     </div>
             </nav>
 
-            <div class = "opener text-center">
+            <div class = "opener text-center" id = "exp">
                 <h1>Jahlil Walker</h1>
                 <p>Student and Aspiring Software Developer</p>
             </div>
@@ -32,14 +32,39 @@
                 <p>
                     <img src="myself.jpg" class="img-circle person" alt="image N/A" style="width:125px;height:125px;margin-right:15px;">
                     My name is Jahlil Walker and I am currently a Junior at the New York University School of Engineering.
-                    I am currently studying Computer Science with a minor in Cybersecurity and Finance.
-                    My previous work experience includes working in the MIS department for Metroplus HealthCare before switching focus to software developement.
-                    I spent my most rececnt summer working as a Software Developement intern at Bank of America.
-                    This position gave me real world experience about how to work in a coportate enviornment and I also learned many different tools and skills.
-                    
+                   I am currently studying Computer Science with a minor in Cybersecurity and Finance.
+                   My previous work experience includes working in the MIS department for Metroplus HealthCare before switching focus to software development.
+                   I spent my most recent summer working as a Software Development intern at Bank of America.
+                   This position gave me real world experience about how to work in a corporate environment and I also learned many different tools and skills.   
                 </p>
             </div>
 
+            <h2 class = "text-center" style = "padding:20px;" id  = "proj"> Projects</h2>
 
+            <div class = "text-center difcolor body-content">
+                    <h3>Sudoku Solver</h3>
+                    
+                    <div class="clearfix">
+
+                            <div class="img-container">
+                              <img src="suderku.png" alt="image of sudoku puzzle" height="350" width="350">
+                            </div>
+                            <div class="img-container">
+                              <p>
+                                    This project resulted from the attempt to take the sudoku puzzle solving algorithm a step
+                                    further. Rather than simply taking a 2D matrix of digits and solving the puzzle, this program
+                                    is able to take an image of the sudoku puzzle (png, jpg, tiff, etc) and uses the Tesseract Optical 
+                                    Character Recognition API to read each cell and store the resulting digit. Once the image is 
+                                    processed into a 2D vector of integers, the puzzle can be solved normally. Several complications arose 
+                                    because of Tesseract is unable to distinguish the numbers from each other as well the lines which make up the graph.
+                                    To solve this problem I utilized the OpenCV C++ library to pre-process the image by removing all all horizontal and vertical
+                                    lines from the image while also processing each individual digit.
+                              </p>
+                            </div>
+                            <div class="img-container">
+                              <img src= "code.png" alt="example of code solution" height="500" width="350" style = "padding-left: 25px;">
+                            </div>
+                    </div>
+            </div>
     </body>
 </html>
